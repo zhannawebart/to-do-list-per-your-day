@@ -1,38 +1,89 @@
+* {
+  font-family: 'Noticia Text', serif;
+}
+
+body {
+  background-color: rgb(98, 133, 133);
+
+}
+
 .App {
-  text-align: center;
+  background-color: rgb(212, 212, 209);
+  /*background-color: rgb(173, 182, 190);*/
+  width: 400px;
+  min-height: 80vh;
+  margin: 50px auto;  /*50px - отступ сверху, auto - размещение в центре страницы*/
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: rgb(72, 82, 79);
+  text-shadow: 5px 3px rgb(255, 217, 0);
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+  flex: 1;
+  margin: 20px;
+  padding: 7px;
+  border-radius: 10px;
+  border: 3px solid rgb(85, 95, 92);
+  font-size: 17px;
+}
+
+.img-position {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.btn-add {
+  background-color: rgb(255, 217, 0);
+  color: rgb(72, 82, 79);
+}
+.btn-delete {
+  background-color: rgb(72, 82, 79);
+  color: rgb(255, 217, 0);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 30%;
+}
+
+.btn-top {
+  margin-top: 40px;
+}
+
+.crossed-word {
+  text-decoration: line-through 3px rgb(253, 207, 0);
+}
+
+ul, li {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+  color:  rgb(72, 82, 79);
+  margin-left: 35px;
+}
+
+
+@media all and (max-width: 500px) {
+  .App {
+    width: 350px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media all and (max-width: 300px) {
+  .App {
+    width: 250px;
   }
 }
